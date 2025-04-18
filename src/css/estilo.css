@@ -10,7 +10,8 @@ h1{
     text-align: center;
 }
 body{
-    background: #000000; 
+    background: linear-gradient(#8a3737,#582525,#180b0b);
+
 }
 #container{
     display: flex;
