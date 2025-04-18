@@ -46,6 +46,12 @@ header nav ul li a:hover{
     gap:20px; /*ESPAÇAMENTO ENTRE OS ELEMENTOS DE 20PX*/
     
 }
+aside{
+    width: 400px;
+    padding: 10px;
+    background-color: #9b7c7c;
+    text-align: center;
+}
 
 /*ELEMENTO MAIN*/
 main{
