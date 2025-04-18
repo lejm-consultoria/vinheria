@@ -1,73 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./src/assests/icons8-vinho-48.png">
-    <link rel="stylesheet" href="./src/css/estilo.css">
-    <title>Vinheria LEJM</title>
-</head>
-<body>
-    <h1>Bem-Vindo(a) a Vinheria LEJM</h1>
-    <div id="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./src/assests/icons8-vinho-48.png">
+        <link rel="stylesheet" href="./src/css/estilo.css">
+        <title>Vinheria LEJM</title>
+    </head>
+    <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="#">Vinhos</a></li>
-                    <li><a href="#">Combinações</a></li>
-                    <li><a href="#">Sommeliers</a></li>
-                    <li><a href="#">Entre em contato conosco</a></li>
-                </ul>
-            </nav>
+            <h1>Bem-Vindo(a) a Vinheria Agnello</h1>
+            
+            <ul>
+                <li><a href="#">Vinhos</a></li>
+                <li><a href="#">Combinações</a></li>
+                <li><a href="#">Sommeliers</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
         </header>
-        <div id="conteudo">
-            <main>
-                <article class="produto">
+
+        <main>
+            <div id="lista-de-vinhos">
+                <article class='vinho'>
                     <img src="./src/assests/Vinho.png" alt=""/>
                     <h3>Vinhos Tintos</h3>
                     <p class="preco">R$49,99</p>
                     <button type="submit">Comprar</button>
                 </article>
-    
-                <article class="produto">
+                <article class='vinho'>
                     <img src="./src/assests/vinho_branco.png" alt=""/>
                     <h3>Vinhos Brancos</h3>
                     <p class="preco">R$79,99</p>
                     <button type="submit">Comprar</button>
                 </article>
-    
-                <article class="produto">
+                <article class='vinho'>
                     <img src="./src/assests/vinho_rose.png" alt=""/>
                     <h3>Vinhos Roses</h3>
                     <p class="preco">R$119,99</p>
                     <button type="submit">Comprar</button>
                 </article>
-    
-                <article class="produto">
+                <article class='vinho'>
                     <img src="./src/assests/combinações.png" alt=""/>
                     <h3>Combinações</h3>
                     <p class="preco">R$19,99</p>
                     <button type="submit">Comprar</button>
                 </article>
-    <aside>
-        <h2>Filtro</h2>
-        <input type="text" value="Pesquisar">
-        <div class="Filtro">
-            <h3>Categorias</h3>
-            <ul>
-                <li><a href="#">Vinhos Tinto </a></li>
-                <li><a href="#">Vinhos Brancos </a></li>
-                <li><a href="#">Vinhos Roses</a></li>
-                <li><a href="#">Combinações</a></li>
-            </ul>
-        </div>
-    </aside>
-            </main>
-            <footer>
-                <p>@vinheriaLEJM<br>
-                   vinheriaLEJM@gmail.com<br>
-                   11998390265
-                </p>
-              </footer>
-</body>
+            </div>
+
+            <aside>
+                <div id="filtro">
+                    <h2>Filtrar</h2>
+                    <input type="text" placeholder="Pesquisar">
+                </div>
+                <ul>
+                    <li><h2>Categorias</h2></li>
+                    <li><a href="#">Vinhos Tinto </a></li>
+                    <li><a href="#">Vinhos Brancos </a></li>
+                    <li><a href="#">Vinhos Roses</a></li>
+                    <li><a href="#">Combinações</a></li>
+                </ul>
+            </aside>
+        </main>
+
+        <footer>
+            <p>📷@vinheriaLEJM</p>
+            <p>📧vinheriaLEJM@gmail.com</p>
+            <p>☎️11998390265</p>
+        </footer>
+    </body>
 </html>

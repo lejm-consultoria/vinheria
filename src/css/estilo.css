@@ -1,111 +1,134 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
 
-}
-h1{
-    background-color: #6f3636;
-    color: #fff;
-    text-align: center;
-}
-body{
-    background: linear-gradient(#8a3737,#582525,#180b0b);
 
-}
-#container{
+body {
     display: flex;
-    flex-direction: column; 
-    min-height: 100vh; 
+    flex-direction: column;
+    min-height: 100vh;
 }
-header{
+
+main {
+    flex: 1;
+}
+
+header {
     background: #6f3636;
-    color:#fff;
-    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header ul li {
+    margin: 10px 20px;
+}
+
+li a {
+    color: black;
+}
+
+li a:hover {
+    color: gray;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    background-color: #bc6060;
+}
+
+aside {
+    background-color: #a05050;
+    width: 20%;
+}
+
+#filtro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside div h2 {
+    padding: 10px;
+}
+
+aside div input {
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside ul li {
+    margin: 5px;
+}
+
+#lista-de-vinhos {
     display: flex;
     justify-content: space-around;
 }
-header nav ul{
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-   
-}
-header nav ul li a{
-    color:#fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 5px 10px;
-}
-header nav ul li a:hover{
-    text-decoration: underline 5px rgb(255, 137, 137); 
-}
-#conteudo{
-    display: grid; /*TRANSFORMA UM ELEMENTO EM UM CONTAINER DE GRADE, ORGANIZADO OS ELEMENTOS EM LINHAS E COLUNAS*/
-    grid-template-columns: 1fr 200px; /*DIVIDE EM UMA COLUNA  COM 1 FRAÇÃO DE LARGURA E 200px de ALTURA*/
-    gap:20px; /*ESPAÇAMENTO ENTRE OS ELEMENTOS DE 20PX*/
-    
-}
-aside{
-    width: 300px;
-    padding: 20px;
-    background-color: #9b7c7c;
-    text-align: center;
+
+.vinho {
+    width: 200px;
+    height: 500px;
+    margin: 30px;
+    padding: 10px;
+    background-color: red;
+    border: 3px solid rgba(0, 0, 0, 0.304);
     border-radius: 10px;
-    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/*ELEMENTO MAIN*/
-main{
-    display: flex;/*DEIXA O CONTEUDO UM DO LADO DO OUTRO FLEXIVEL*/
-    flex-wrap: wrap; /*PERMITE QUE OS ITEMS FLEXIVEIS QUEBREM DE LINHA SE NÃO HOUVER ESPAÇO NA MESMA LINHA */
-    justify-content: center; /*JUSTIFICA O CONTEUDO AO CENTRO*/
-
-}
-/*CLASS PRODUTO*/
-.produto{
-    width: 200px;/*LARGURA de 200px*/
-    height: 400px; /*ALTURA de 400px*/
-    margin: 20px;/*MARGEM EM TODOS OS LADOS DE 20px*/
-    padding: 20px;/*ESPAÇAMENTO INTERNO EM TODOS OS LADOS DE 20px*/
-    border: 1px solid #000000;/*CRIA UMA BORDA COM 1px de ESPESSURA COM A COR CINZA*/
-    background-image: linear-gradient(#6e0000,#a05050,#9b7c7c);/*FAZ UM DEGRADE NO FUNDO DO CARD*/
-    color:#fff;/*COR DA FONTE*/
-    border-radius: 30px;/* DEIXA O CARD COM AS BORDAS ARRENDODAS*/
-}
-/*CLASS PRODUTO E ELEMENTO IMG*/
-.produto img{
-    max-width: 100%;/* MAXIMO DE LARGURA DA IMAGEM*/
-    height: auto;/* ALTURA AUTOMATICA, MAS PODE COLOCAR EM PX EX: 400px*/
-    margin-bottom: 10px;/*MARGEM INFERIOR DE 10PX*/
-}
-/*CLASS PRECO*/
-.preco{
-    font-weight: 700;/*DEIXAR O TEXTO EM NEGRITO*/
-    margin-top: 50px;/*ESPAÇO SUPERIOR DE 50PX*/
-    color:rgb(255, 255, 255);/*COR DA FONTE*/
-    font-size: 1.7rem;/*TAMANHO DA FONTE DE 1.7 -Rem é uma unidade de medida relativa em CSS que se baseia no tamanho da fonte do elemento raiz da  página */
-}
-/*ELEMENTO BUTTON*/
-button{
-    background: rgb(143, 28, 28);/*COR DO FUNDO*/
-    margin-top: 30px;/*MARGEM SUPERIOR DE 30px*/
-    padding: 15px 45px;/*ESPAÇAMENTO DE 15PX (SUPERIOR e INFERIOR) E 45px ( DIREITA e ESQUERDA)*/
-    border-radius: 20px;/*DEIXA OS CANTOS DAS BORDAS ARRENDODAS*/
-    cursor: pointer;/*AO COLOCAR O MOUSE EM CIMA DO BOTÃO VIRA UMA MÃOZINHA*/
-
+main div article img {
+    width: 200px;
+    height: 300px;
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
 }
 
-/*ELEMENTO BOTTOM COM EFEITO*/
-button:hover{
-    background: #964545;/*COR DO FUNDO*/
-    color:rgb(255, 255, 255);/*COR DA FONTE*/
+main div article button {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(184, 183, 183);
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+main div article button:hover {
+    background-color: rgb(129, 128, 128);
+}
+
 footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 10px 0px ;
-    margin-top: 500px;
-  }
+    background-color: #a05050;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    padding: 20px;
+}
