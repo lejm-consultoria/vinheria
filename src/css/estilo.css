@@ -10,7 +10,7 @@ h1{
     text-align: center;
 }
 body{
-    background: #f4f4f4; 
+    background: #000000; 
 }
 #container{
     display: flex;
@@ -47,10 +47,12 @@ header nav ul li a:hover{
     
 }
 aside{
-    width: 400px;
-    padding: 10px;
+    width: 300px;
+    padding: 20px;
     background-color: #9b7c7c;
     text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
 }
 
 /*ELEMENTO MAIN*/
