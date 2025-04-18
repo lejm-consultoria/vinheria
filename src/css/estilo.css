@@ -102,3 +102,10 @@ button:hover{
     background: #964545;/*COR DO FUNDO*/
     color:rgb(255, 255, 255);/*COR DA FONTE*/
 }
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0px ;
+    margin-top: 500px;
+  }
