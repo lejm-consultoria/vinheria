@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     background-attachment: fixed
     overflow-x hidden;
+    background: #1b0202;
 }
 
 main {
@@ -124,7 +125,14 @@ main div article img {
     max-width: 100%;
     border-radius: 5px;
 }
-
+main div article button a{
+    text-decoration: none;
+    color: #4B0F25;
+}
+main div article button a:hover{
+    text-decoration: none;
+    color: white;
+}
 main div article button {
     width: 150px;
     height: 40px;
