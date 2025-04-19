@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,6 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-attachment: fixed
+    overflow-x hidden;
 }
 
 main {
@@ -17,12 +19,13 @@ main {
 }
 
 header {
-    background: #6f3636;
+    background: #390404;
 }
 
 header h1 {
     text-align: center;
     padding-top: 10px;
+    color: white;
 }
 
 header ul {
@@ -36,21 +39,22 @@ header ul li {
 }
 
 li a {
-    color: black;
+    color: white;
 }
 
 li a:hover {
-    color: gray;
+    color: #D4AF37;
+    font-size: 17px;
 }
 
 main {
     display: flex;
     justify-content: space-between;
-    background-color: #bc6060;
+    background: linear-gradient(#390404, #250202, #1b0202);
 }
 
 aside {
-    background-color: #a05050;
+    background: linear-gradient(#390404, #250202, #1b0202);
     width: 20%;
 }
 
@@ -62,6 +66,7 @@ aside {
 
 aside div h2 {
     padding: 10px;
+    color: white
 }
 
 aside div input {
@@ -81,11 +86,15 @@ aside ul {
 
 aside ul li {
     margin: 5px;
+    color: white    ;
 }
 
 #lista-de-vinhos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;          
+    gap: 20px;
+    margin: 0 auto;   
 }
 
 .vinho {
@@ -93,8 +102,8 @@ aside ul li {
     height: 500px;
     margin: 30px;
     padding: 10px;
-    background-color: red;
-    border: 3px solid rgba(0, 0, 0, 0.304);
+    background: linear-gradient(to bottom right, #4B0F25, #D46A6A);
+    border: 2px solid black;
     border-radius: 10px;
 
     display: flex;
@@ -102,7 +111,12 @@ aside ul li {
     justify-content: space-between;
     align-items: center;
 }
-
+.vinho  h3{
+    color: white
+}
+.preco{
+    color: white
+}
 main div article img {
     width: 200px;
     height: 300px;
@@ -114,21 +128,26 @@ main div article img {
 main div article button {
     width: 150px;
     height: 40px;
-    background-color: rgb(184, 183, 183);
+    background-color: #F2C6B4;
+color: #4B0F25; /* vinho escuro */
     border-radius: 5px;
     cursor: pointer;
 }
 
 main div article button:hover {
-    background-color: rgb(129, 128, 128);
+    background-color: rgb(17, 71, 11);
+    width: 175px;
+    font-size: 15px;
+    color: white;
 }
 
 footer {
-    background-color: #a05050;
+    background-color:#1b0202;
     display: flex;
     justify-content: center;
 }
 
 footer p {
     padding: 20px;
+    color: white
 }

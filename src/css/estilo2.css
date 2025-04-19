@@ -9,5 +9,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(170, 48, 58);
+    background-color: #390404;
+    color: white;
+}
+button{
+    border-radius: 5px;
 }
